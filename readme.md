@@ -14,8 +14,7 @@ HotelHub is a comprehensive hotel management system developed using Django, a hi
 - **Multi-Platform Support:** Responsive design for seamless use on various devices, including desktops, tablets, and smartphones.
 
 ## Video
-<iframe width="560" height="315" src="https://youtu.be/e1xSpQR7acM" frameborder="0" allowfullscreen></iframe>
-
+[![Watch the video](https://img.youtube.com/vi/e1xSpQR7acM/hqdefault.jpg)](https://piped.video/e1xSpQR7acM)
 ## Screenshots
 
 | Screenshot Name          | Image |
