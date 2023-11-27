@@ -5,11 +5,26 @@
 
 {% block content %}
   <h2 class="titlex">Reservations</h2>
-  <ul class="listx">
-    {% for reservation in reservations %}
-      <li class="itemx"><a class="linky" href="{% url 'reservation_detail' reservation.id %}">{{ reservation.room.room_number }} - {{ reservation.check_in_date }} to {{ reservation.check_out_date }}</a></li>
+  <table>
+    <thead>
+      <tr>
+      <th>Room No</th>
+      <th>Guest</th>
+      <th>Check In</th>
+      <th>Check out</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for reservation in reservations %}
+      <tr>
+      <td><a class="linky" href="{% url 'reservation_detail' reservation.id %}">{{ reservation.room.room_number }} </a> </td>
+      <td><a class="linky" href="{% url 'guest_detail' reservation.guest.id %}">{{ reservation.guest.first_name }} {{ reservation.guest.last_name }}</a></td>
+      <td><a class="linky" href="{% url 'reservation_detail' reservation.id %}">{{ reservation.check_in_date }}</a></td>
+      <td><a class="linky" href="{% url 'reservation_detail' reservation.id %}">{{ reservation.check_out_date }}</a></td>
+      </tr>
       {% empty %}
       <p>No Record found! <a href="{% url 'reservation_create' %}" class="linky">Create Reservation </a></p>
       {% endfor %}
-  </ul>
+    </tbody>
+  </table>
 {% endblock %}

@@ -12,5 +12,5 @@ class Reservation(models.Model):
     def get_absolute_url(self):
         return reverse('reservation_detail', args=[str(self.id)])
     def __str__(self):
-        return self.room.room_number
+        return f"{self.room.room_number} | form {self.check_in_date} to {self.check_out_date}"
 
