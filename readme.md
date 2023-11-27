@@ -1,5 +1,5 @@
 # HotelHub: Hotel Management System
-[![License](https://img.shields.io/badge/Custom-RestrictiveLicense-yellow)](LICENSE)
+[![License](https://img.shields.io/badge/MIT-License-yellow)](LICENSE)
 
 HotelHub is a comprehensive hotel management system developed using Django, a high-level Python web framework. This system is designed to streamline and automate various aspects of hotel operations, providing a centralized platform for efficient management.
 
@@ -12,6 +12,9 @@ HotelHub is a comprehensive hotel management system developed using Django, a hi
 - **Check-In/Check-Out:** Streamline the check-in and check-out processes for guests, ensuring a smooth experience.
 
 - **Multi-Platform Support:** Responsive design for seamless use on various devices, including desktops, tablets, and smartphones.
+
+## Video
+<iframe width="560" height="315" src="https://youtu.be/e1xSpQR7acM" frameborder="0" allowfullscreen></iframe>
 
 ## Screenshots
 
@@ -58,4 +61,4 @@ Found a bug? Report it on [GitHub Issues](https://github.com/immodded/hotelhub/i
 
 ## License
 
-This project is licensed under the [Custom Restrictive License](LICENSE).
+This project is licensed under the [MIT License](LICENSE).
