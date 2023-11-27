@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Room List{% endblock title %}
+
+{% block content %}
+  <h2 class="titlex">Room List</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Room No.</th>
+        <th>Type</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for room in rooms %}
+      <tr>
+        <td><a class="linky"href="{% url 'room_detail' room.pk %}">{{ room.room_number }} </td>
+        <td>{{ room.room_type }} </td> 
+        <td>{% if room.is_booked_now %}<span style="color:red;">Booked</span>{% else %}<span style="color:green;">Available</span>{% endif %} </a></td>
+        {% empty %}
+        <p>No Record found! <a href="{% url 'room_create' %}" class="linky">Add Room </a></p>
+        {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

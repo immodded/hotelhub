@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Guest List{% endblock title %}
+
+{% block content %}
+  <h2 class="titlex">Guest List</h2>
+  <ul class="listx">
+    {% for guest in guests %}
+      <li class="itemx"><a class="linky" href="{% url 'guest_detail' guest.pk %}">{{ guest.id }} | {{ guest.first_name }} {{ guest.last_name }}</a></li>
+    {% empty %}
+    <p>No Record found! <a href="{% url 'guest_create' %}" class="linky">Add Guest </a></p>
+      {% endfor %}
+  </ul>
+{% endblock content %}

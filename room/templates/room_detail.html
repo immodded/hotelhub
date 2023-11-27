@@ -1,0 +1,38 @@
+<!-- room_detail.html -->
+{% extends 'base.html' %}
+
+{% block title %}Room Details{% endblock title %}
+
+{% block content %}
+  <h2 class="titlex">Room Details</h2>
+  <p>Room Number: {{ room.room_number }}</p>
+  <p>Room Type: {{ room.room_type }}</p>
+  <p>Price per Night: ₹ {{ room.price_per_night }}</p>
+  <h3 class="titlex">Upcoming Reservations</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Guest</th>
+        <th>Check-in Date</th>
+        <th>Check-out Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for reservation in reservations %}
+        <tr>
+          <td><a href="{% url 'guest_detail' reservation.guest.pk %}">{{ reservation.guest.first_name }} {{ reservation.guest.last_name }}</a></td>
+          <td>{{ reservation.check_in_date }}</td>
+          <td>{{ reservation.check_out_date }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <a class="linkx" href="{% url 'reservation_list'  %}?room_number={{ room.room_number }}">All Reservations</a>
+
+  <h3 class="titlex">Booking Status</h3>
+  {% if room.is_booked_now %}
+    <p>The room is currently booked.</p>
+  {% else %}
+    <p>The room is currently available.</p>
+  {% endif %}
+{% endblock content %}

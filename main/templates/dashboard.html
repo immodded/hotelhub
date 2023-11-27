@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}Dashboard{% endblock title %}
+{% block content %}
+  <h2 class="titlex">Welcome to the HotelHub</h2>
+
+  <div class="dashboard">
+    <div class="card">
+        <h2 class="titlex">Rooms</h2>
+        <p>{{ total_rooms }}</p>
+    </div>
+
+    <div class="card">
+        <h2 class="titlex">Total Guests</h2>
+        <p>{{ total_guests }}</p>
+    </div>
+
+    <div class="card">
+        <h2 class="titlex"> Total Reservations </h2>
+        <p>{{ total_reservations }}</p>
+    </div>
+</div>
+
+{% endblock %}

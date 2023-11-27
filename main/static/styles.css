@@ -1,0 +1,242 @@
+/* Define color variables */
+:root {
+    --primary-color: #164863;  /* Blue color */
+    --secondary-color: #9BBEC8;  /* Red color */
+}
+
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Set minimum height to 100% of the viewport height */
+}
+
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: underline;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+main {
+    flex: 1; 
+    text-align: start;
+    margin: 20px 20%;
+    padding: 2rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 8px;
+}
+
+form input,
+form select,
+form textarea {
+    margin-bottom: 16px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    text-align: center;
+    padding: 10px;
+    margin-top: auto; /* Push the footer to the bottom */
+}
+
+/* Media query for mobile responsiveness */
+@media only screen and (max-width: 600px) {
+    main {
+        margin: 20px 20px;
+    }
+
+    
+}
+
+@media only screen and (max-width:400px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+.titlex {
+    color: var(--primary-color); /* Use the primary color for the title */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 8px;
+}
+
+.linkx {
+    color: var(--primary-color); /* Use the primary color for links */
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 3px 3px;
+    border-radius: 5px;
+    border:2px solid var(--secondary-color);
+}
+
+.linkx:hover {
+    background-color: var(--primary-color); /* Change background color on hover */
+    color: var(--secondary-color);
+}
+
+
+/* Add CSS styles for the respective classes */
+.listx {
+    list-style:none;
+    padding: 0;
+    margin: 0;
+}
+
+.itemx {
+    margin-bottom: 10px;
+}
+
+.linky {
+    text-decoration: underline;
+    color: var(--primary-color)
+
+}
+
+/* Add CSS styles for the respective classes */
+.pagination {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.page-item {
+    margin: 0 5px;
+}
+
+.page-link {
+    text-decoration: none;
+    color: var(--primary-color); /* Use your primary color for links */
+    padding: 8px 12px;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+}
+
+.page-link:hover {
+    background-color: var(--primary-color); /* Change background color on hover */
+    color: #fff;
+}
+
+.page-link.active {
+    background-color: var(--primary-color); /* Active page color */
+    color: #fff;
+}
+
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Adjust the margin based on your design */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+thead {
+    background-color: #f2f2f2;
+}
+
+/* Link styling for guest names */
+td a {
+    text-decoration: none;
+    color: var(--primary-color); /* Use your primary color for links */
+    font-weight: bold;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+
+.dashboard {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 15px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        width: calc(80% - 30px);
+    }
+}

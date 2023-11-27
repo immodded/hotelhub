@@ -1,0 +1,35 @@
+# Virtual environment
+venv/
+
+# Byte-compiled files
+*.pyc
+*.pyo
+__pycache__/
+
+# Media files
+media/
+
+# Database files
+db.sqlite3
+
+# Log files
+*.log
+
+# Ignore the local settings file
+local_settings.py
+
+# Ignore the Django migration history
+**/migrations/
+
+# Ignore the IDE configuration files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore pipenv virtual environment
+Pipfile
+Pipfile.lock

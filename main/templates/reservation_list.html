@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Reservation List{% endblock %}
+
+
+{% block content %}
+  <h2 class="titlex">Reservations</h2>
+  <ul class="listx">
+    {% for reservation in reservations %}
+      <li class="itemx"><a class="linky" href="{% url 'reservation_detail' reservation.id %}">{{ reservation.room.room_number }} - {{ reservation.check_in_date }} to {{ reservation.check_out_date }}</a></li>
+      {% empty %}
+      <p>No Record found! <a href="{% url 'reservation_create' %}" class="linky">Create Reservation </a></p>
+      {% endfor %}
+  </ul>
+{% endblock %}

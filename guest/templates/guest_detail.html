@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %} Guest Detail {% endblock title %}
+{% block content %}
+<h2 class="titlex">Guest Detail</h2>
+  <p>Name: {{ guest.first_name }} {{ guest.last_name }}</p>
+  <p>Email: {{ guest.email }}</p>
+  <p>Phone Number: {{ guest.phone_number }}</p>
+    <p>Address: {{ guest.address }}</p>
+      <p>Government ID: {{ guest.government_id }}</p>
+  <a class="linkx" href="{% url 'reservation_create' %}?guest_id={{ guest.id }}">Make Reservation </a> 
+
+  {% endblock content %}

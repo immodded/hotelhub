@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Reservation Detail{% endblock %}
+
+
+{% block content %}
+  <h2 class="titlex">Reservation Detail</h2>
+  <p>Room: {{ reservation.room.room_number }}</p>
+  <p>Guest: {{ reservation.guest.first_name }}</p>
+  <p>Check-in Date: {{ reservation.check_in_date }}</p>
+  <p>Check-out Date: {{ reservation.check_out_date }}</p>
+  <p>Additional Details : {{ reservation.additional|linebreaks }}</p>
+  <a class="linkx" href="{% url 'reservation_update' reservation.id %}">Update</a>
+  {% endblock %}
