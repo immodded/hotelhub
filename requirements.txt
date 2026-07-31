@@ -1,1 +1,6 @@
-django
+Django==3.2.19
+psycopg2-binary
+django-redis
+redis
+gunicorn
+

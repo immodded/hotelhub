@@ -1,0 +1,110 @@
+[
+    {
+        "model": "room.room",
+        "pk": 1,
+        "fields": {
+            "room_number": "101",
+            "room_type": "Standard",
+            "price_per_night": "1500.00"
+        }
+    },
+    {
+        "model": "room.room",
+        "pk": 2,
+        "fields": {
+            "room_number": "102",
+            "room_type": "Standard",
+            "price_per_night": "1500.00"
+        }
+    },
+    {
+        "model": "room.room",
+        "pk": 3,
+        "fields": {
+            "room_number": "103",
+            "room_type": "Standard",
+            "price_per_night": "1600.00"
+        }
+    },
+    {
+        "model": "room.room",
+        "pk": 4,
+        "fields": {
+            "room_number": "201",
+            "room_type": "Deluxe",
+            "price_per_night": "2500.00"
+        }
+    },
+    {
+        "model": "room.room",
+        "pk": 5,
+        "fields": {
+            "room_number": "202",
+            "room_type": "Deluxe",
+            "price_per_night": "2500.00"
+        }
+    },
+    {
+        "model": "room.room",
+        "pk": 6,
+        "fields": {
+            "room_number": "203",
+            "room_type": "Deluxe",
+            "price_per_night": "2700.00"
+        }
+    },
+    {
+        "model": "room.room",
+        "pk": 7,
+        "fields": {
+            "room_number": "301",
+            "room_type": "Executive",
+            "price_per_night": "3500.00"
+        }
+    },
+    {
+        "model": "room.room",
+        "pk": 8,
+        "fields": {
+            "room_number": "302",
+            "room_type": "Executive",
+            "price_per_night": "3600.00"
+        }
+    },
+    {
+        "model": "room.room",
+        "pk": 9,
+        "fields": {
+            "room_number": "401",
+            "room_type": "Suite",
+            "price_per_night": "5000.00"
+        }
+    },
+    {
+        "model": "room.room",
+        "pk": 10,
+        "fields": {
+            "room_number": "402",
+            "room_type": "Suite",
+            "price_per_night": "5500.00"
+        }
+    },
+    {
+        "model": "room.room",
+        "pk": 11,
+        "fields": {
+            "room_number": "501",
+            "room_type": "Presidential Suite",
+            "price_per_night": "10000.00"
+        }
+    },
+    {
+        "model": "room.room",
+        "pk": 12,
+        "fields": {
+            "room_number": "502",
+            "room_type": "Presidential Suite",
+            "price_per_night": "12000.00"
+        }
+    }
+]
