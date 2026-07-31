@@ -1,5 +1,9 @@
+# Environment variables
+.env
+
 # Virtual environment
 venv/
+env/
 
 # Byte-compiled files
 *.pyc
@@ -33,3 +37,13 @@ local_settings.py
 # Ignore pipenv virtual environment
 Pipfile
 Pipfile.lock
+
+# Docker volumes/data
+postgres_data/
+redis_data/
+
+# OS files
+.DS_Store
+
+
+
