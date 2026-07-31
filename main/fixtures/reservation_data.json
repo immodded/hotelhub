@@ -1,0 +1,113 @@
+[
+  {
+    "model": "main.reservation",
+    "pk": 1,
+    "fields": {
+      "room": 1,
+      "guest": 1,
+      "additional": "Airport pickup requested",
+      "check_in_date": "2026-08-01",
+      "check_out_date": "2026-08-05"
+    }
+  },
+  {
+    "model": "main.reservation",
+    "pk": 2,
+    "fields": {
+      "room": 2,
+      "guest": 2,
+      "additional": "Extra bed required",
+      "check_in_date": "2026-08-03",
+      "check_out_date": "2026-08-07"
+    }
+  },
+  {
+    "model": "main.reservation",
+    "pk": 3,
+    "fields": {
+      "room": 3,
+      "guest": 3,
+      "additional": "Late check-in",
+      "check_in_date": "2026-08-10",
+      "check_out_date": "2026-08-14"
+    }
+  },
+  {
+    "model": "main.reservation",
+    "pk": 4,
+    "fields": {
+      "room": 4,
+      "guest": 4,
+      "additional": "Breakfast included",
+      "check_in_date": "2026-08-12",
+      "check_out_date": "2026-08-18"
+    }
+  },
+  {
+    "model": "main.reservation",
+    "pk": 5,
+    "fields": {
+      "room": 5,
+      "guest": 5,
+      "additional": "Sea view requested",
+      "check_in_date": "2026-08-15",
+      "check_out_date": "2026-08-20"
+    }
+  },
+  {
+    "model": "main.reservation",
+    "pk": 6,
+    "fields": {
+      "room": 6,
+      "guest": 6,
+      "additional": "Business trip",
+      "check_in_date": "2026-08-20",
+      "check_out_date": "2026-08-25"
+    }
+  },
+  {
+    "model": "main.reservation",
+    "pk": 7,
+    "fields": {
+      "room": 7,
+      "guest": 7,
+      "additional": "Family stay",
+      "check_in_date": "2026-08-22",
+      "check_out_date": "2026-08-29"
+    }
+  },
+  {
+    "model": "main.reservation",
+    "pk": 8,
+    "fields": {
+      "room": 8,
+      "guest": 8,
+      "additional": "VIP guest",
+      "check_in_date": "2026-09-01",
+      "check_out_date": "2026-09-05"
+    }
+  },
+  {
+    "model": "main.reservation",
+    "pk": 9,
+    "fields": {
+      "room": 9,
+      "guest": 9,
+      "additional": "Wedding event",
+      "check_in_date": "2026-09-10",
+      "check_out_date": "2026-09-15"
+    }
+  },
+  {
+    "model": "main.reservation",
+    "pk": 10,
+    "fields": {
+      "room": 10,
+      "guest": 10,
+      "additional": "Corporate booking",
+      "check_in_date": "2026-09-20",
+      "check_out_date": "2026-09-25"
+    }
+  }
+]
+
